@@ -20,7 +20,7 @@ TODO
 ## 环境配置
 
 [配置IDE和本地环境](./docs/env-setup/ConfigIDE.md)  
-[启用&nbsp;Windows&nbsp;Ubuntu&nbsp;SubSystem](./docs/env-setup/EnableUbuntuSubSystem.md)  
+[启用&nbsp;Windows&nbsp;Ubuntu&nbsp;SubSystem](./docs/env-setup/EnableWindowsSubSystem.md)  
 [配置Redis]()  
 [配置MongoDB]()  
 
