@@ -19,8 +19,9 @@ TODO
 
 ## 环境配置
 
-[配置IDE和本地环境](./docs/env-setup/ConfigIDE.md)  
-[启用&nbsp;Windows&nbsp;Ubuntu&nbsp;SubSystem](./docs/env-setup/EnableWindowsSubSystem.md)  
+请注意，如无单独说明，本项目中的服务器均指配置完毕的 WSL 的子系统。  
+[配置本地环境](./docs/env-setup/ConfigLocalEnvironment.md)  
+[启用&nbsp;Windows&nbsp;SubSystem&nbsp;for&nbsp;Linux](./docs/env-setup/EnableWindowsSubSystem.md)  
 [配置Redis]()  
 [配置MongoDB]()  
 
