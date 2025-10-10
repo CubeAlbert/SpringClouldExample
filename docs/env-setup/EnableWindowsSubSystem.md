@@ -40,6 +40,25 @@ Windows 资源管理器可以直接访问子系统的文件，但是并不方便
 登录成功后则说明 SSH 连接配置正常。
 ```
 
+## 配置本地磁盘挂载点为只读（可选）（但重要！）
+
+wsl 会自动挂载本地磁盘到 /mnt 下，但是在绝大多数场景下，我们并不需要去写入本地磁盘。  
+我们可以将挂载点设置为只读，以避免子系统误操作本地磁盘文件。  
+（比如在子系统中根目录下执行 "rm -rf ."，这会顺带帮你删除所有的本地磁盘文件！）  
+
+```text
+使用如下命令编辑 wsl.conf 文件，来更改挂载点的行为。
+  sudo vim /etc/wsl.conf
+在文件中添加如下两行：（事实上options只包含ro就足够了）
+  [automount]
+  options = "ro,metadata,umask=22,fmask=11"
+保存退出，并重启子系统。
+
+重启后使用 mount 命令来检查本地磁盘是否已经挂载为ReadOnly。
+也可使用touch命令来检查读写状态。
+  touch /mnt/d/test.txt
+```  
+
 ## 配置公钥登录（可选）
 
 参考 OpenSSH 的 [ssh-keygen](https://man.openbsd.org/ssh-keygen) 的文档。  
