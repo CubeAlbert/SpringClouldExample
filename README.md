@@ -23,6 +23,7 @@ TODO
 [配置IDE和本地环境](./docs/env-setup/ConfigLocalEnvironment.md)  
 [启用&nbsp;Windows&nbsp;SubSystem&nbsp;for&nbsp;Linux](./docs/env-setup/EnableWindowsSubSystem.md)  
 [配置服务器环境](./docs/env-setup/ConfigServerEnvironment.md)  
+[配置Nacos&nbsp;Server](./docs/env-setup/InstallNacos.md)  
 [配置Redis]()  
 [配置MongoDB]()  
 
