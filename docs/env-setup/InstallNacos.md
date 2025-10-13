@@ -72,4 +72,35 @@ Nacos Console started successfully in 532 ms
 
 ## 配置 Nacos Server 自动启动
 
-TODO  
+创建 Nacos-Server 服务，并配置开机启动。
+
+```text
+创建 nacos-server.service 文件，并输入下段的内容：
+  sudo vim /etc/systemd/system/nacos-server.service
+更改文件权限为644：
+  sudo chmod 644 nacos-server.service
+之后执行如下命令激活并启动该服务：
+  sudo systemctl daemon-reload
+  sudo systemctl enable nacos-server
+  sudo systemctl start nacos-server
+使用如下命令检查服务状态并尝试访问 Nacos Server 控制台：
+  sudo systemctl status nacos-server
+尝试使用如下命令停止服务，并检查是否可以访问 Nacos Server 控制台：
+  sudo systemctl stop nacos-server
+```
+
+```text
+[Unit]
+Description=Nacos-Server
+After=network.target
+
+[Service]
+Type=forking
+User=appfid
+ExecStart=bash /app/nacos/bin/startup.sh -m standalone
+ExecStop=bash /app/nacos/bin/shutdown.sh
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
+```
