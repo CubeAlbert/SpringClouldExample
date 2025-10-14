@@ -1,0 +1,4 @@
+rootProject.name = 'spring-cloud-albert'
+
+include 'cloud-config'
+
