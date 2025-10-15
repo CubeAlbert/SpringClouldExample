@@ -1,6 +1,6 @@
 plugins {
     id 'dependencyManagement'
-    id 'javaConvention'
+    id 'javaCommonConvention'
 }
 
 description = 'Demo project for Spring Cloud Config based on Spring Cloud Alibaba'
