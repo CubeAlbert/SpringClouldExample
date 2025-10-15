@@ -1,4 +1,4 @@
-package com.albert.cloud.service;
+package com.albert.cloud.nacos.service;
 
 
 import com.alibaba.nacos.api.NacosFactory;

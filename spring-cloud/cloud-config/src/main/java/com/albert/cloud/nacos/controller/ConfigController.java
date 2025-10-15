@@ -1,8 +1,7 @@
-package com.albert.cloud.controller;
+package com.albert.cloud.nacos.controller;
 
-import com.albert.cloud.service.NacosConfigService;
+import com.albert.cloud.nacos.service.NacosConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

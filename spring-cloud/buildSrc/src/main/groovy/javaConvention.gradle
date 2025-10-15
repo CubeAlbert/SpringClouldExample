@@ -1,0 +1,12 @@
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+group = 'com.albert'
+version = '0.0.2-SNAPSHOT'
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
